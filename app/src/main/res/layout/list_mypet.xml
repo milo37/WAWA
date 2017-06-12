@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="200px"
+        android:layout_height="250px"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/mypet_img"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/mypet_img"
+        android:background="@drawable/border"
+        android:id="@+id/linear1">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            android:textSize="10pt"
+            android:text="애견이름"
+            android:background="@drawable/border_right"
+            android:id="@+id/mypet_name"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="|등록번호"
+            android:background="@drawable/border_right"
+            android:id="@+id/mypet_resist"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/mypet_img"
+        android:layout_below="@+id/linear1"
+        android:background="@drawable/border"
+        android:id="@+id/linear2">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="품종"
+            android:background="@drawable/border_right"
+            android:id="@+id/mypet_kind"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="|성별"
+            android:background="@drawable/border_right"
+            android:id="@+id/mypet_sex"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="|중성화"
+            android:background="@drawable/border_right"
+            android:id="@+id/mypet_neutral"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_toRightOf="@+id/mypet_img"
+        android:layout_below="@+id/linear2"
+        android:background="@drawable/border"
+        android:id="@+id/linear3">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="생일"
+            android:background="@drawable/border_right"
+            android:id="@+id/mypet_birth"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="|개나이환산"
+            android:background="@drawable/border_right"
+            android:id="@+id/mypet_dog_age"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="|사람나이환산"
+            android:background="@drawable/border_right"
+            android:id="@+id/mypet_people_age"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/mypet_img"
+        android:background="@drawable/border"
+        android:id="@+id/linear4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="몸무게"
+            android:background="@drawable/border_right"
+            android:id="@+id/mypet_weight"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="|평균몸무게"
+            android:background="@drawable/border_right"
+            android:id="@+id/mypet_average_weight"
+            />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:text="|필요열량"
+            android:background="@drawable/border_right"
+            android:id="@+id/mypet_calorie"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear4"
+        android:text="일일운동권장량"
+        android:background="@drawable/border"
+        android:id="@+id/mypet_exercise"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mypet_exercise"
+        android:background="@drawable/border"
+        android:text="미용주기"
+        android:id="@+id/mypet_beauty"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mypet_beauty"
+        android:background="@drawable/border_bottom"
+        android:text="예방접종시기"
+        android:id="@+id/mypet_medical"
+        />
+
+
+</RelativeLayout>
